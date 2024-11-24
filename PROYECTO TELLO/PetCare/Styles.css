@@ -1,0 +1,366 @@
+/* Enlace de la fuente Dancing Script para el sitio */
+.dancing-script-custom {
+    font-family: "Pattaya", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+/* Reset - Ajuste de Pantalla */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body, html {
+    width: 100%;
+    height: 100%;
+    font-family: "Pattaya", cursive;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Imagen de fondo fija */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh; 
+    background-image: url('Fondo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+/* Estilo del logo en pantalla de inicio */
+.inicio-logo {
+    width: 430px; /* Ajusta el tamaño deseado */
+    position: absolute;
+    left: 120px;
+    top: 169px;
+}
+
+/* Menú superior */
+#menu-bar {
+    width: 100%;
+    background-color: #BFFFFF;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    flex-wrap: wrap;
+}
+
+#menu-bar a {
+    color: black;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#menu-bar a:hover {
+    background-color: #00FFFF;
+}
+
+/* Estilo general de los botones */
+button {
+    padding: 12px 24px;
+    font-size: 1em;
+    color: black;
+    background-color: #FFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Pattaya", cursive; /* Fuente igual a la del resto del contenido */
+}
+
+button:hover {
+    background-color: #00FFFF;
+}
+
+/* Contenedores de las secciones */
+.screen {
+    display: none;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 40px;
+    max-width: 600px;
+    width: 50%;
+    margin-left: 440px;
+}
+
+.screen.active {
+    display: block;
+}
+
+.screen p {
+    text-align: justify;
+}
+
+#start-screen h1 {
+    margin-bottom: 15px;  /* Esto agrega un espacio de 20 píxeles debajo de 'Somos Petcare' */
+}
+
+/* Botones generales */
+button {
+    padding: 12px 24px;
+    font-size: 1em;
+    color: black;
+    background-color: #00FFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #00FFFF;
+}
+
+/* Contenedor donde estará el GIF */
+#gif-container {
+    width: 310px; /* Ajusta el tamaño del GIF */
+    height: 190px; /* Ajusta el tamaño del GIF */
+    padding: 10px;
+    margin-left: 15px;
+}
+
+/* Ajustes específicos para el GIF */
+#gif-container img {
+    width: 100%; /* Se ajusta al contenedor */
+    border-radius: 10px; /* Si deseas bordes redondeados */
+}
+
+/* Formulario */
+#form-screen label {
+    display: block;
+    font-weight: bold;
+    margin: 10px 0 5px;
+}
+
+#form-screen input {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 11.5px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+/* Ajuste de login-container */
+.login-container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    width: 600px; /* Ancho ajustado */
+    margin-top: 10px;
+    margin-left: 435px; /* Alinea el contenedor a la derecha */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login-text {
+    flex: 1; /* Toma el espacio restante */
+}
+
+/* Login container, alinear todo al lado izquierdo */
+.login-container .login-text {
+    text-align: left; /* Alinear todo el contenido al lado izquierdo */
+}
+
+#login-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#login-section form {
+    width: 100%;
+}
+
+/* Input fields y labels alineados a la izquierda */
+#login-section label,
+#login-section input {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+#login-section h2 {
+    text-align: center;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+#login-section input {
+    padding: 8px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+#login-section button {
+    width: 100%;
+    padding: 12px;
+    background-color: #00FFFF;
+}
+
+/* Estilo de los registros */
+#records-list .registro {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px; /* Espacio entre registros */
+    padding: 10px;
+    border: 2px solid #ccc; /* O cualquier borde que prefieras */
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    align-items: flex-start; /* Alinea todo al lado izquierdo */
+}
+
+#records-list .registro div {
+    margin-bottom: 5px;
+}
+
+#records-list .registro label {
+    font-weight: bold;
+    color: #038d92; /* Color azul para las etiquetas */
+    text-align: left; /* Asegura que las etiquetas estén alineadas a la izquierda */
+}
+
+#records-list .registro span {
+    margin-left: 5px;
+    text-align: left; /* Asegura que las respuestas también estén alineadas a la izquierda */
+}
+
+/* Modal para la contraseña */
+.modal {
+    display: none;
+    position: fixed;
+    width: 20%;
+    height: 20%;
+    align-items: center;
+    top: 40%; /* Baja el modal ajustando este valor (50% es el centro) */
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+.modal-content {
+    background-color: rgb(252, 252, 252);
+    border: 4px solid #00D1D1; /* Borde de 2px con color cian */
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    width: 390px;
+}
+
+.modal-content h2 {
+    margin-bottom: 20px; /* Espacio entre el título y el campo de entrada */
+}
+
+#password-input {
+    padding: 10px;
+    width: 80%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#password-form button {
+    padding: 10px 20px;
+    background-color: #00FFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#password-form button:hover {
+    background-color: #00D1D1;
+}
+
+/* Ajustes de Responsividad */
+
+/* Dispositivos pequeños (pantallas de hasta 600px de ancho), incluyendo orientación horizontal */
+@media (max-width: 600px) {
+    /* Ocultar el logo completamente en dispositivos pequeños */
+    .inicio-logo {
+        display: none !important; /* Fuerza el ocultamiento del logo */
+    }
+
+    /* Contenedor de inicio de sesión */
+    .login-container {
+        width: 90%; /* Ocupa la mayor parte del ancho */
+        margin: 20px auto; /* Centra horizontalmente y agrega espacio vertical */
+        padding: 10px;
+        border-radius: 10px; /* Mantén esquinas redondeadas */
+    }
+
+    /* Contenedores de secciones */
+    .screen {
+        width: 95%; /* Ocupa casi todo el ancho con margen */
+        margin: 20px auto; /* Centra y da espacio vertical */
+        padding: 10px; /* Reduce el espacio interno */
+    }
+
+    /* Modal para la contraseña */
+    .modal {
+        width: 80%; /* Más ancho para pantallas pequeñas */
+        height: auto; /* Altura ajustable */
+        padding: 15px;
+    }
+
+    /* Menú superior */
+    #menu-bar {
+        flex-direction: column; /* Alinea el menú en columna */
+        gap: 10px; /* Reduce espacio entre enlaces */
+        padding: 5px;
+    }
+}
+
+/* Tablets (pantallas de hasta 900px de ancho) */
+@media (max-width: 900px) {
+    /* Mostrar el logo para pantallas medianas */
+    .inicio-logo {
+        display: block; /* Asegúrate de que el logo sea visible */
+        width: 120px; /* Ajusta el tamaño del logo */
+        top: 15px;
+        right: 20px; /* Alineación precisa */
+    }
+
+    /* Contenedor de inicio de sesión */
+    .login-container {
+        width: 80%; /* Ocupa la mayor parte del ancho */
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    /* Contenedores de secciones */
+    .screen {
+        width: 85%; /* Más espacio en pantallas medianas */
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    /* Modal para la contraseña */
+    .modal {
+        width: 60%; /* Moderadamente más ancho */
+        height: auto;
+        padding: 20px;
+    }
+
+    /* Menú superior */
+    #menu-bar {
+        flex-direction: row; /* Mantén el menú en fila */
+        flex-wrap: wrap; /* Permite que se ajuste si es necesario */
+        gap: 20px; /* Espaciado cómodo entre enlaces */
+    }
+}
